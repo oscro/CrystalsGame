@@ -1,224 +1,126 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
 
-
-
     <title>Crystals Collector</title>
 
-
-
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Roboto+Mono" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
-
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
-
 
 </head>
 
-
-
 <body>
-
-
 
     <div class="container">
 
+        <h1 class="border border-dark text-center">Crystals Collector Game</h1>
 
-
-        <h1>Crystals Collector Game</h1>
-
-
-
-        <p>
-
-
+        <p class="bg-dark text-white text-center">
 
             You will be given a random number at the start of the game </br>
-
-
-
 
 
             There are four crystals below. By clicking on a crystal you will add a specific amount of points to your
             total score. </br>
 
-
-
             You win the game by matching your total score to random number, you lose the game if your total score goes
             above the random number. </br>
 
-
-
             The value of each crystal is hidden from you until you click on it.
 
-
-
             Each time when the game starts, the game will change the values of each crystal.
-
-
-
 
 
         </p>
 
 
+        <div class="container font-weight-bold">
 
-        <div id="randomnum">
+            <div class="row">
 
-
-
-            RANDOMLY GENERATED NUMBER BOX
-
+                <div class="border border-dark text-center" id="wins">
 
 
-            Random Number generated between 19-120
+                    Wins: 0
 
 
 
-            Crystals have values between 1-12
+                </div>
+
+                <div class="border border-dark text-center" id="randomnum">
 
 
 
-        </div>
+                </div>
 
 
 
-        <div id="wins">
+                <div class="border border-dark text-center" id="losses">
 
 
+                    Losses: 0
 
 
+                </div>
 
-            Wins: 0
+            </div> <!-- End of Row -->
 
-
-
-
-
-
-
-        </div>
-
-
-
-        <div id="losses">
-
-
-
-
-
-            Losses: 0
-
-
-
-
-
-        </div>
+        </div> <!-- End of Container -->
 
 
 
         <div id="crystalcontainer">
 
-
-
-            <div class="row">
-
-
+            <div class="row border border-dark" id="crystalrow">
 
                 <div class="crystal col-sm-3">
-
-
 
                     <img src="assets/images/crystal1.jpg" id="crystal1" alt="crystal1">
 
-
-
                 </div>
 
-
-
                 <div class="crystal col-sm-3">
-
-
 
                     <img src="assets/images/crystal2.jpg" id="crystal2" alt="crystal2">
 
-
-
                 </div>
 
-
-
                 <div class="crystal col-sm-3">
-
-
 
                     <img src="assets/images/crystal3.jpg" id="crystal3" alt="crystal3">
-
                 </div>
-
-
 
                 <div class="crystal col-sm-3">
 
-
-
                     <img src="assets/images/crystal4.png" id="crystal4" alt="crystal4">
-
                 </div>
+            </div>
+
+        </div>
+
+        <div class="container font-weight-bold text-center">
+
+            <div>
+
+                Your total score is:
 
             </div>
 
+            <div id="totalscore">
 
-
+            </div>
         </div>
-
-
-
-        <div>
-
-
-
-            Your total score is:
-
-
-
-        </div>
-
-
-
-        <div id="totalscore">
-
-
-
-
-
-
-
-        </div>
-
-
 
     </div> <!-- End of container div -->
 
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
     <script type="text/javascript" src="assets/javascript/game.js"></script>
 
 
-
-
-
 </body>
-
-
-
 
 
 </html>

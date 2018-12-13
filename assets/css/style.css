@@ -1,45 +1,79 @@
-#crystal1{
+body{
 
- 
-
-    width: 64%;
-
-
+	font-family: 'Roboto Mono', monospace;
 
 }
 
+h1{
 
+	font-family: 'Bungee', cursive;
+
+}
+
+#crystal1{
+
+	width: 64%;
+
+}
 
 #crystal2{
 
-
-
-    width: 60%;
-
+	width: 60%;
+    	padding-top: 3px;
 
 
 }
-
-
 
 #crystal3{
 
-
-
-    width: 53%;
-
+	width: 53%;
+    	padding-top: 7px;
 
 
 }
 
-
-
 #crystal4{
 
+	width: 66%;
+
+}
+
+#randomnum{
+
+	margin-left:135px;
+	padding-left:20px;
+	padding-right:20px;
+
+}
+
+#wins{
+	background-color: #90e0a4;
+
+	margin-left: 170px;
+	padding-left:20px;
+	padding-right:20px; 
+
+}
 
 
-    width: 66%;
+#losses{
 
+	background-color: #ff8585;
 
+	margin-left: 112px;
+	padding-left:20px;
+	padding-right:20px;
+
+}
+
+#crystalcontainer{
+
+	margin-top: 30px; 
+
+}
+
+#crystalrow{
+	
+	padding-left: 74px;
 
 }
